@@ -19,6 +19,7 @@ const mapTree = (node, func = el => el) => {
  * @returns {Object|boolean} node|false
  */
 const findInTree = (node, func) => {
+  console.log('f', node);
   if (func(node)) return node;
   let finding = false;
   if (node.childes.length) {
